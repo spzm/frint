@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "travix"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  }
+}

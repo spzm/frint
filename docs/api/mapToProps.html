@@ -1,0 +1,947 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mapToProps · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Region.html" />
+    
+    
+    <link rel="prev" href="Component.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Table of Contents</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Read Me
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction/">
+            
+                <a href="../introduction/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../introduction/Motivation.html">
+            
+                <a href="../introduction/Motivation.html">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../introduction/Terminologies.html">
+            
+                <a href="../introduction/Terminologies.html">
+            
+                    
+                    Terminologies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../installation/Requirements.html">
+            
+                <a href="../installation/Requirements.html">
+            
+                    
+                    Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../installation/Npm.html">
+            
+                <a href="../installation/Npm.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../guides/">
+            
+                <a href="../guides/">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../guides/create-app/">
+            
+                <a href="../guides/create-app/">
+            
+                    
+                    Creating a new App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../guides/create-app/NpmInit.html">
+            
+                <a href="../guides/create-app/NpmInit.html">
+            
+                    
+                    Initialize npm package
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../guides/create-app/Dependencies.html">
+            
+                <a href="../guides/create-app/Dependencies.html">
+            
+                    
+                    Install the dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../guides/create-app/Transpiler.html">
+            
+                <a href="../guides/create-app/Transpiler.html">
+            
+                    
+                    Setup Transpiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../guides/create-app/DirectoryStructure.html">
+            
+                <a href="../guides/create-app/DirectoryStructure.html">
+            
+                    
+                    Directory Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../guides/create-app/App.html">
+            
+                <a href="../guides/create-app/App.html">
+            
+                    
+                    App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../guides/create-app/Component.html">
+            
+                <a href="../guides/create-app/Component.html">
+            
+                    
+                    Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../guides/create-app/Export.html">
+            
+                <a href="../guides/create-app/Export.html">
+            
+                    
+                    Export
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../guides/create-app/Store.html">
+            
+                <a href="../guides/create-app/Store.html">
+            
+                    
+                    Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../guides/create-app/Actions.html">
+            
+                <a href="../guides/create-app/Actions.html">
+            
+                    
+                    Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="../guides/create-app/Reducers.html">
+            
+                <a href="../guides/create-app/Reducers.html">
+            
+                    
+                    Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.11" data-path="../guides/create-app/Services.html">
+            
+                <a href="../guides/create-app/Services.html">
+            
+                    
+                    Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.12" data-path="../guides/create-app/Factories.html">
+            
+                <a href="../guides/create-app/Factories.html">
+            
+                    
+                    Factories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.13" data-path="../guides/create-app/Injection.html">
+            
+                <a href="../guides/create-app/Injection.html">
+            
+                    
+                    Props Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.14" data-path="../guides/create-app/Build.html">
+            
+                <a href="../guides/create-app/Build.html">
+            
+                    
+                    Build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.15" data-path="../guides/create-app/Testing.md">
+            
+                <span>
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="createApp.html">
+            
+                <a href="createApp.html">
+            
+                    
+                    createApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="createComponent.html">
+            
+                <a href="createComponent.html">
+            
+                    
+                    createComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="h.html">
+            
+                <a href="h.html">
+            
+                    
+                    h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="PropTypes.html">
+            
+                <a href="PropTypes.html">
+            
+                    
+                    PropTypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="combineReducers.html">
+            
+                <a href="combineReducers.html">
+            
+                    
+                    combineReducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="createModel.html">
+            
+                <a href="createModel.html">
+            
+                    
+                    createModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="createService.html">
+            
+                <a href="createService.html">
+            
+                    
+                    createService
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="createFactory.html">
+            
+                <a href="createFactory.html">
+            
+                    
+                    createFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="App.html">
+            
+                <a href="App.html">
+            
+                    
+                    App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="Component.html">
+            
+                <a href="Component.html">
+            
+                    
+                    Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.11" data-path="mapToProps.html">
+            
+                <a href="mapToProps.html">
+            
+                    
+                    mapToProps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="Region.html">
+            
+                <a href="Region.html">
+            
+                    
+                    Region
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="server/">
+            
+                <a href="server/">
+            
+                    
+                    server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.13.1" data-path="server/renderToString.html">
+            
+                <a href="server/renderToString.html">
+            
+                    
+                    renderToString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Glossary.html">
+            
+                <a href="../Glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../CONTRIBUTING.md">
+            
+                <span>
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    Change Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >mapToProps</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="maptoprops"><a name="maptoprops" class="plugin-anchor" href="#maptoprops"><i class="fa fa-link" aria-hidden="true"></i></a>mapToProps</h1>
+<p>This is a handy function that is used for enhancing your Components, by injecting new values as props coming in from various sources.</p>
+<h2 id="state"><a name="state" class="plugin-anchor" href="#state"><i class="fa fa-link" aria-hidden="true"></i></a>State</h2>
+<p>If you want to get values from state, and bind the values as they change to your Component as props, you can:</p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/** @jsx h */</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createComponent<span class="token punctuation">,</span> mapToProps<span class="token punctuation">,</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;frint&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> MyComponent <span class="token operator">=</span> <span class="token function">createComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> todos <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// JSX here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    todos<span class="token punctuation">:</span> state<span class="token punctuation">.</span>todos<span class="token punctuation">.</span>records
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="actions"><a name="actions" class="plugin-anchor" href="#actions"><i class="fa fa-link" aria-hidden="true"></i></a>Actions</h2>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/** @jsx h */</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createComponent<span class="token punctuation">,</span> mapToProps<span class="token punctuation">,</span> h <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;frint&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> addTodo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;../actions/todos&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> MyComponent <span class="token operator">=</span> <span class="token function">createComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> handleAddButton <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// JSX here</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  dispatch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    handleAddButton<span class="token punctuation">:</span> addTodo
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="app"><a name="app" class="plugin-anchor" href="#app"><i class="fa fa-link" aria-hidden="true"></i></a>App</h2>
+<p>If you want to inject something coming from the App instance:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  app<span class="token punctuation">:</span> <span class="token punctuation">(</span>app<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      appName<span class="token punctuation">:</span> app<span class="token punctuation">.</span><span class="token function">getOption</span><span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Models can be accessed as:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  app<span class="token punctuation">:</span> <span class="token punctuation">(</span>app<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      color<span class="token punctuation">:</span> app
+        <span class="token punctuation">.</span><span class="token function">getModel</span><span class="token punctuation">(</span><span class="token string">&apos;shirt&apos;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">getColor</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="shared-state-from-other-apps"><a name="shared-state-from-other-apps" class="plugin-anchor" href="#shared-state-from-other-apps"><i class="fa fa-link" aria-hidden="true"></i></a>Shared state from other Apps</h2>
+<p>If you app is allwoed to listen to state changes happening in other Apps, you can:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  shared<span class="token punctuation">:</span> <span class="token punctuation">(</span>sharedState<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      counter<span class="token punctuation">:</span> sharedState<span class="token punctuation">.</span>SomeOtherAppName<span class="token punctuation">[</span>reducerName<span class="token punctuation">]</span><span class="token punctuation">.</span>someKey
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="services"><a name="services" class="plugin-anchor" href="#services"><i class="fa fa-link" aria-hidden="true"></i></a>Services</h2>
+<pre class="language-"><code class="lang-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  services<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// propName: serviceKeyName</span>
+    http<span class="token punctuation">:</span> <span class="token string">&apos;http&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="factories"><a name="factories" class="plugin-anchor" href="#factories"><i class="fa fa-link" aria-hidden="true"></i></a>Factories</h2>
+<pre class="language-"><code class="lang-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  factories<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// propName: factoryKeyName</span>
+    request<span class="token punctuation">:</span> <span class="token string">&apos;request&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="observe"><a name="observe" class="plugin-anchor" href="#observe"><i class="fa fa-link" aria-hidden="true"></i></a>Observe</h2>
+<p>The <code>observe</code> key can be used for listening to an observable, and then map its returned object as props.</p>
+<p>You have access to the <code>app</code> instance, leaving you free to get observables from other Factories or Services if need be</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Observable <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;rxjs&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">mapToProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  observe<span class="token punctuation">:</span> <span class="token punctuation">(</span>app<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> Observable
+      <span class="token comment" spellcheck="true">// iterate over these values in a sequence</span>
+      <span class="token punctuation">.</span><span class="token keyword">of</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+      <span class="token comment" spellcheck="true">// now convert it to an object, which will be available as props</span>
+      <span class="token punctuation">.</span><span class="token function">scan</span><span class="token punctuation">(</span>
+        <span class="token comment" spellcheck="true">// this function would be called twice,</span>
+        <span class="token comment" spellcheck="true">// first with `1`, and then `2` as number</span>
+        <span class="token punctuation">(</span>props<span class="token punctuation">,</span> number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+          props<span class="token punctuation">.</span>total <span class="token operator">=</span> props<span class="token punctuation">.</span>total <span class="token operator">+</span> number<span class="token punctuation">;</span>
+
+          <span class="token keyword">return</span> acc<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token comment" spellcheck="true">// the initial object to start the `scan` with</span>
+        <span class="token punctuation">{</span>
+          name<span class="token punctuation">:</span> app<span class="token punctuation">.</span><span class="token function">getOption</span><span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          total<span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>RootComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Component.html" class="navigation navigation-prev " aria-label="Previous page: Component">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Region.html" class="navigation navigation-next " aria-label="Next page: Region">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mapToProps","level":"1.5.11","depth":2,"next":{"title":"Region","level":"1.5.12","depth":2,"path":"docs/api/Region.md","ref":"docs/api/Region.md","articles":[]},"previous":{"title":"Component","level":"1.5.10","depth":2,"path":"docs/api/Component.md","ref":"docs/api/Component.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.2.2","theme":"default","variables":{},"plugins":["edit-link","prism","-highlight","github","anchors","collapsible-menu"],"pluginsConfig":{"prism":{},"collapsible-menu":{},"github":{"url":"https://github.com/Travix-International/frint/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/Travix-International/frint/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/api/mapToProps.md","mtime":"2016-12-16T09:30:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-20T16:32:56.661Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
